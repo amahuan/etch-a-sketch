@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    border-color: red;
+    border-style: dashed;
+    width: 750px;
+    height: 750px;
+}
+.grid-box {
+    display: flex;
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px;
+    font-size: auto;
+    width: (100/16)%;
+    height: (100/16)%;
+}
