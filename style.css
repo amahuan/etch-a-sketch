@@ -1,17 +1,27 @@
+.container {
+    border-color: green;
+    display: inline-block;
+    border: 5px solid;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    /* grid-template-columns: '';
+    grid-template-rows: ''; */
     border-color: red;
     border-style: dashed;
-    width: 750px;
-    height: 750px;
+    width: 500px;
+    height: 500px;
 }
 .grid-box {
     display: flex;
     border-color: blue;
     border-style: solid;
     border-width: 1px;
-    font-size: auto;
-    width: (100/16)%;
-    height: (100/16)%;
+    /* width: auto;
+    height: auto; */
 }
+/* 
+.grid-box:hover {
+    background-color: pink;
+} */
