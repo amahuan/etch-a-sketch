@@ -1,4 +1,4 @@
-const grid=document.querySelector('.grid');
+const grid=document.getElementsByClassName('grid');
 var dimension;
 var gridSize=16;
 dimension=gridSize;
@@ -7,12 +7,13 @@ var gridItems;
 
 function addDiv() {
 //sets value of grid-template-columns and grid-template-rows based on dimensions to make sure the height and width are the same (each box is a square)  
-    document.getElementsByClassName('grid')[0].style="grid-template-columns: repeat(" + dimension + ", 1fr); grid-template-rows: repeat(" + dimension + ", 1fr);";
+    grid[0].style="grid-template-columns: repeat(" + dimension + ", 1fr); grid-template-rows: repeat(" + dimension + ", 1fr);";
+    console.log(grid[0].style.gridTemplateRows.value);
 //then creates a div for each square in the grid, first using orginal dimensions of 16x16 then using user input
     for(let j=1;j<=(dimension**2);j++){
         var element=document.createElement('div')
         element.classList="div"+j + " grid-box"
-        grid.appendChild(element);
+        grid[0].appendChild(element);
     }
 //script was creating initial divs and then creating on top of that new divs based on user input, and the new divs did not have the hover feature. to fix this, added this to the function.
 //this adds event listener mimicing hover
