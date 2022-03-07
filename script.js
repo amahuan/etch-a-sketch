@@ -24,10 +24,19 @@ function addDiv() {
     gridItems=document.querySelectorAll('.grid-box');
     gridItems.forEach(box=>
         box.addEventListener('mouseover', () => {
-            box.style.backgroundColor="fuchsia";
+            box.style.backgroundColor=randomColor();
         }));
 }
 addDiv();
+
+//generates random background color instead of fixed color
+function randomColor() {
+    var r = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var color = "rgb(" + r + "," + b + "," + g + ")";
+    return color;
+}
 
 //when clear button is clicked, all coloring goes away and grid returns to white
 document.getElementById('clear').addEventListener('click',reset);
