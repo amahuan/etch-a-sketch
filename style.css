@@ -1,21 +1,24 @@
+body {
+    background-color: black;
+}
+
 .container {
-    border-color: green;
     display: inline-block;
-    border: 5px solid;
 }
 
 .grid {
     display: grid;
     /* grid-template-columns: '';
     grid-template-rows: ''; */
-    border-color: red;
-    border-style: dashed;
+    /* border-color: black;
+    border-style: solid; */
+    border-width: 1px;;
     width: 500px;
     height: 500px;
 }
 .grid-box {
     display: flex;
-    border-color: blue;
+    border-color: rgb(78, 77, 77);
     border-style: solid;
     border-width: 1px;
     /* width: auto;
@@ -25,3 +28,6 @@
 .grid-box:hover {
     background-color: pink;
 } */
+button {
+    margin-bottom: 20px;
+}
