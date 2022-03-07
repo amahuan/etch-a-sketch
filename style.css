@@ -8,11 +8,7 @@ body {
 
 .grid {
     display: grid;
-    /* grid-template-columns: '';
-    grid-template-rows: ''; */
-    /* border-color: black;
-    border-style: solid; */
-    border-width: 1px;;
+    border-width: 0.05px;;
     width: 500px;
     height: 500px;
 }
@@ -20,14 +16,9 @@ body {
     display: flex;
     border-color: rgb(78, 77, 77);
     border-style: solid;
-    border-width: 1px;
-    /* width: auto;
-    height: auto; */
+    border-width:0.05px;
 }
-/* 
-.grid-box:hover {
-    background-color: pink;
-} */
+
 button {
     margin-bottom: 20px;
 }
